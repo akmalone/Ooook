@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+  <title>Ooook! Productions</title>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+       text-align: center;
+       background: black;
+     }
+    a {
+      color: white;
+      text-decoration: none;
+      background:;
+    }
+    #logo {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(255,140,0,1); 
+      font-weight: bold;
+      font-size: 28px;
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <img id="logo" src="Logo.jpg">
+    <h1>Ooook! Productions</h1>
+    <ul>
+      <li><a href="#">Exec</a></li>
+      <li><a href="#">Upcoming Productions</a></li>
+      <li><a href="#">Past Productions</a></li>
+    </ul>
+    <img src="cover.png" />
+  </header>
+  <article>
+    <h2>A Comedy Double Bill</h2>
+    <p>Ooook! Productions presents an evening of meta-theatre where the lines between fact and fiction, actor and audience are dangerously (and hilariously) blurred and twisted, featuring 'The Actor's Nightmare' by Christopher Durang and 'The Real Inspector Hound' by Tom Stoppard.</p>
+    <p>In 'The Actor's Nightmare', accountant George Spelvin finds himself taking the lead role in an ever-shifting play that he's never rehearsed for with a cast he has never met before, while 'The Real Inspector Hound' sees theatre critics Moon and Birdboot attending a murder mystery performance that ends up feeling somewhat too real for comfort..</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Soul Music</h2>
+    <p>For those of you who are unfamiliar with the story, it centres around the exploits of the young harpist Imp y Celyn, who swears to become the most famous musician in the world before inventing a new kind of music: Music With Rocks In. With his faithful band mates Cliff the troll and Glod the dwarf he sets out to change the musical landscape of Ankh-Morpork forever.</p>
+    <p>Meanwhile, Death goes missing in action forcing his sixteen year old granddaughter Susan to take over. Her job is going fine until a certain musician is suddenly in mortal peril...</p>
+    </p>There will be leopards! There will be wizards! There will be Music With Rocks In! It's gonna be great.</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
